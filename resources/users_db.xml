@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><users>
+   <user>
+      <property name="username">root</property>
+      <property name="hashedPassword">63a9f0ea7bb98050796b649e85481845</property>
+      <property name="uid">1</property>
+   </user>
+   <user>
+      <property name="username">test1</property>
+      <property name="uid">test1</property>
+      <property name="hashedPassword">5a105e8b9d40e1329780d62ea2265d8a</property>
+   </user>
+   <user>
+      <property name="username">test2</property>
+      <property name="uid">test2</property>
+      <property name="hashedPassword">ad0234829205b9033196ba818f7a872b</property>
+   </user>
+<user><property name="username">test4</property><property name="uid">test3</property><property name="hashedPassword">86985e105f79b95d6bc918fb45ec7727</property></user></users>

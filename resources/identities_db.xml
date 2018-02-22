@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><identities>
+   <identity>
+      <property name="displayName">root</property>
+      <property name="uid">1</property>
+      <property name="email">root@root.com</property>
+   </identity>
+   <identity>
+      <property name="displayName">test1</property>
+      <property name="uid">test1</property>
+      <property name="email">test1</property>
+   </identity>
+   <identity>
+      <property name="displayName">test2</property>
+      <property name="uid">test2</property>
+      <property name="email">test2</property>
+   </identity>
+<identity><property name="displayName">test3</property><property name="uid">test3</property><property name="email">test3</property></identity></identities>
