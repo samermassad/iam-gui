@@ -20,7 +20,6 @@ import javax.xml.transform.TransformerException;
 import fr.epita.iam.datamodel.Identity;
 import fr.epita.iam.exceptions.ReadOnlyException;
 import fr.epita.iam.exceptions.UpdateException;
-import fr.epita.iam.services.identity.dao.IdentityDAOManager;
 
 /**
  * @author Samer Masaad

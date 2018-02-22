@@ -25,14 +25,10 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.table.DefaultTableModel;
-import javax.xml.transform.TransformerException;
 
 import fr.epita.iam.datamodel.Identity;
-import fr.epita.iam.exceptions.DeleteException;
-import fr.epita.iam.exceptions.ReadOnlyException;
 import fr.epita.iam.exceptions.SearchException;
 import fr.epita.iam.launcher.Global;
-import fr.epita.iam.services.identity.dao.IdentityDAOManager;
 import fr.epita.logger.Logger;
 
 /**

@@ -17,9 +17,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
-import fr.epita.iam.datamodel.User;
-import fr.epita.iam.exceptions.SearchException;
-import fr.epita.iam.services.users.dao.UserDAOManager;
 import fr.epita.logger.Logger;
 
 /**

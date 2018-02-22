@@ -17,12 +17,10 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.xml.transform.TransformerException;
 
-import fr.epita.iam.datamodel.Identity;
 import fr.epita.iam.exceptions.CreationException;
 import fr.epita.iam.exceptions.DuplicateException;
 import fr.epita.iam.exceptions.ReadOnlyException;
 import fr.epita.iam.exceptions.SearchException;
-import fr.epita.iam.services.identity.dao.IdentityDAOManager;
 import fr.epita.logger.Logger;
 
 /**

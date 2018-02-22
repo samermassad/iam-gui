@@ -16,6 +16,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.SwingConstants;
 
 import fr.epita.iam.launcher.Global;
+import fr.epita.logger.Logger;
 
 /**
  * @author Samer Masaad
@@ -24,6 +25,8 @@ public class Home {
 
 	private JFrame frmIamMain;
 
+	private static final Logger LOGGER = new Logger(Home.class);
+	
 	/**
 	 * Launch the application.
 	 */
@@ -34,7 +37,7 @@ public class Home {
 					Home window = new Home();
 					window.frmIamMain.setVisible(true);
 				} catch (Exception e) {
-					e.printStackTrace();
+					LOGGER.error("Error occured while trying to load the JFrame",e);
 				}
 			}
 		});
@@ -65,10 +68,6 @@ public class Home {
 		JLabel lblUsers = new JLabel("Users:");
 
 		JButton btnIdentityAdd = new JButton("Add Identity");
-		btnIdentityAdd.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
 		btnIdentityAdd.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {

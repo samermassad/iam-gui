@@ -4,7 +4,6 @@
 package fr.epita.iam.gui;
 
 import java.awt.EventQueue;
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -23,7 +22,6 @@ import fr.epita.iam.datamodel.User;
 import fr.epita.iam.exceptions.ReadOnlyException;
 import fr.epita.iam.exceptions.SearchException;
 import fr.epita.iam.exceptions.UpdateException;
-import fr.epita.iam.services.users.dao.UserDAOManager;
 
 /**
  * @author Samer Masaad

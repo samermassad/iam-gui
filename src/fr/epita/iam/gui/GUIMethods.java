@@ -1,9 +1,7 @@
 package fr.epita.iam.gui;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
 import javax.xml.transform.TransformerException;
 
 import fr.epita.iam.datamodel.Identity;
@@ -24,6 +22,9 @@ import fr.epita.logger.Logger;
  * @author Samer Masaad
  */
 public class GUIMethods {
+	
+	//private constructor
+	private GUIMethods() {}
 
 	private static Logger LOGGER = new Logger(GUIMethods.class);
 
@@ -72,7 +73,7 @@ public class GUIMethods {
 
 	protected static List<Identity> identitySearch(String displayName, String email, String uid)
 			throws SearchException {
-		List<Identity> results = new ArrayList<>();
+		List<Identity> results;
 		Identity identity = new Identity();
 		if (!displayName.isEmpty()) {
 			identity.setDisplayName(displayName);
@@ -87,7 +88,7 @@ public class GUIMethods {
 		try {
 			results = dao.search(identity);
 		} catch (SearchException e) {
-			LOGGER.error("error occured while searching", e);
+			LOGGER.error("error occured while searching for:" + displayName, e);
 			throw e;
 		}
 		return results;
@@ -99,7 +100,7 @@ public class GUIMethods {
 		try {
 			dao.delete(identity);
 		} catch (ReadOnlyException | TransformerException | DeleteException e1) {
-			LOGGER.error("error occured while searching", e1);
+			LOGGER.error("error occured while deleting:" + identity, e1);
 			throw e1;
 		}
 	}
